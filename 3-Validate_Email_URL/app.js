@@ -10,7 +10,7 @@
  *********************************************** */
 
 // import custom module
-const notes = require('./notes.js');
+const notes = require('./notes.js.js');
 
 // set some message
 const noteMessage = "### EMAIL + URL Validation ###\n### Via Custom module ###";
