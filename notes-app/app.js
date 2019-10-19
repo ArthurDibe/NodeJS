@@ -6,7 +6,7 @@
     into it. then once is done, closes the file
 */
 
-require('./utils.js');      // import the utils.js module into appp.js module
+const data2 = require('./utils.js');      // import the utils.js module into appp.js module
 const fs = require('fs');   // import fs object to write in files
 
 const data = 'This is a new line appended from app.js!\n';    // data to be appended
@@ -20,8 +20,8 @@ messages.push(data2);
 
 try {
     noteFile = fs.openSync('notes.txt','a');  // option to open a file in append mode
-    for(let element in messages)
-        fs.appendFileSync(noteFile,element,'utf-8');
+    for(let i in messages)
+        fs.appendFileSync(noteFile, messages[i], 'utf-8');
 } catch (err){
     /* Error */
 } finally {
