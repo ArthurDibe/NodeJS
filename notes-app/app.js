@@ -1,11 +1,12 @@
 /*  
     AUTHOR: Dibe
-    
+
     DESCRIPTION:
     This app will open a file, and append information
     into it. then once is done, closes the file
- */
+*/
 
+require('./utils.js');      // import the utils.js module into appp.js module
 const fs = require('fs');   // import fs object to write in files
 
 const data = 'This is a new line appended!\n';    // data to be appended
