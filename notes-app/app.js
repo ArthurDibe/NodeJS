@@ -1,9 +1,23 @@
+/* ***********************************************
+    AUTHOR: Dibe
+
+    FILE: app.js
+
+    DESCRIPTION:
+        
+
+*********************************************** */
+
+// import 3rd partie packages
 const validator = require('validator');
+const chalk = require('chalk');
+
+// import custom module
 const notes = require('./notes.js');
 
-const noteMessage = "Edgar Allan Poe once said: Never more...";
+const msg = notes.getNotes();
 
-console.log(notes.getNotes(noteMessage));
-console.log();
-console.log(validator.isEmail('person@example.com'));  // validates a receiving email
-console.log(validator.isURL('www.google.com'));        // validates a receiving URL
+console.log(msg);
+
+const colorfulMSG = chalk.red.inverse.bold('Success');
+console.log(colorfulMSG);
