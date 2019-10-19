@@ -6,8 +6,8 @@
     into it. then once is done, closes the file
 */
 
-const utils = require('./utils.js');      // import the utils.js module into appp.js module
 const fs = require('fs');   // import fs object to write in files
+const utils = require('./utils.js');      // import the utils.js module into appp.js module
 
 const data = 'This is a new line appended from app.js!\n';    // data to be appended
 
