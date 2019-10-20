@@ -7,6 +7,12 @@
         This module holds the commands definition
         implemented with yargs 3rd party package.
 
+    USAGE:
+        node app.js (command) --title="title Name" --body="description text"
+        
+        EX: node app.js add --title="Note 1" --body="do not forget assignments"
+            node app.js remove -- title="note 1"
+
 *********************************************** */
 
 // import 3rd partie packages
@@ -39,7 +45,7 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: (argv)=>{          // handler is the object that will do an action with the information retrieved
+    handler(argv) {          // handler is the object that will do an action with the information retrieved
         notes.addNote(argv.title, argv.body);
     }
 });
@@ -55,7 +61,7 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: (argv)=>{
+    handler(argv) {
         notes.removeNote(argv.title);
     }
 });
@@ -64,7 +70,7 @@ yargs.command({
 yargs.command({
     command: 'list',
     describe: 'List the notes',
-    handler: ()=>{
+    handler() {
         console.log('Listing notes!')
     }
 });
@@ -73,7 +79,7 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Read note!',
-    handler: ()=>{
+    handler(){
         console.log('Reading note!')
     }
 });

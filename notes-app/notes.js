@@ -13,10 +13,10 @@
 const fs = require('fs');
 const chalk = require('chalk');
 
-const getNotes = () =>
-{
+const getNotes = () => {
     return "Once Edgar Allan Poe said: \"Never more...\"";
 }
+
 
 
 const addNote = (title, body) =>
@@ -28,10 +28,7 @@ const addNote = (title, body) =>
     // array filter method looks for all elements
     // of an array and returns the ones who match
     // a certain condition, and store the in a array
-    const duplicateNotes = notes.filter((element)=>
-    {  
-        return element.title.toLowerCase() === title.toLowerCase();                                             
-    });
+    const duplicateNotes = notes.filter( (element)=> element.title.toLowerCase()===title.toLowerCase() );
     
     if(duplicateNotes.length === 0)
     {
@@ -73,9 +70,7 @@ const removeNote = (title) =>
     const notes = loadNotes();
 
     // array of notes to keep
-    const notesToKeep = notes.filter((element)=>{
-        return element.title.toLowerCase() !== title.toLowerCase();
-    });
+    const notesToKeep = notes.filter( (element) => element.title.toLowerCase()!==title.toLowerCase() );
 
     // check if the array of notes to keep has the same length as the original
     if(notesToKeep.length !== notes.length) {
@@ -83,8 +78,7 @@ const removeNote = (title) =>
         console.log(chalk.green(`${title}`),chalk.green.inverse("REMOVED!"));
     } else {
         console.log(chalk.yellow(`${title}`),chalk.yellow.inverse("NOT FOUND!"));
-    }
-    
+    }  
 }
 
 module.exports = {
