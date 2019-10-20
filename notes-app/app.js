@@ -4,13 +4,14 @@
     FILE: app.js
 
     DESCRIPTION:
-        
+        This module holds the commands definition
+        implemented with yargs 3rd party package.
 
 *********************************************** */
 
 // import 3rd partie packages
-const chalk = require('chalk');
 const yargs = require('yargs');
+
 // import custom module
 const notes = require('./notes.js');
 
