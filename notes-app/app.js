@@ -21,7 +21,6 @@ const notes = require('./notes.js');
 yargs.version('2.0.0');     // change the displaying version
                             // when --version is typed
                             // node app.js --version
-
 // create add command
 yargs.command({
     command: 'add',
@@ -40,8 +39,7 @@ yargs.command({
         }
     },
     handler: (argv)=>{          // handler is the object that will do an action with the information retrieved
-        console.log(`Title: ${argv.title}`);
-        console.log(`Body: ${argv.body}`)
+        notes.addNote(argv.title, argv.body);
     }
 });
 
@@ -49,8 +47,15 @@ yargs.command({
 yargs.command({
     command: 'remove',
     describe: 'remove a note',
-    handler: ()=>{
-        console.log('Removing note!')
+    builder: {
+        title: {
+            describe: 'Note Title',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: (argv)=>{
+        notes.removeNote(argv.title);
     }
 });
 
