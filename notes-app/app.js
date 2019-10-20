@@ -9,15 +9,16 @@
 *********************************************** */
 
 // import 3rd partie packages
-const validator = require('validator');
 const chalk = require('chalk');
+const yargs = require('yargs');
 
 // import custom module
 const notes = require('./notes.js');
 
-const msg = notes.getNotes();
+const command = process.argv[2];
 
-console.log(msg);
-
-const colorfulMSG = chalk.red.inverse.bold('Success');
-console.log(colorfulMSG);
+if(command === "add"){
+    console.log(chalk.blue.inverse("Adding note!"));
+} else if (command === "remove"){
+    console.log(chalk.red.inverse("Removing note!"));
+}
