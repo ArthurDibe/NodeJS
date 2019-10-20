@@ -8,7 +8,7 @@
 1. Professionals that want to share alternatives code solutions for some file(s) found in this repo.
 <br>
 
-**\*Before you try to run the codes inside this repository, make sure you have installed Node in your machine:**
+**\*Before you try to run the codes from this repository, make sure you have installed Node in your machine:**
 
 [Official Node.js website](https://nodejs.org/en/)
 <br>
