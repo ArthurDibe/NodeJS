@@ -4,7 +4,9 @@
     FILE: notes.js
 
     DESCRIPTION:
-        
+        This module holds the methods definitions
+        that will allow the user to add, remove, list
+        and read notes. 
 
  *********************************************** */
 
@@ -38,10 +40,10 @@ const addNote = (title, body) =>
             body: body
         });
         saveNotes(notes);
-        console.log("New note added !");
-    } else{
-        console.log("Sorry... Title already exists!");
-    }  
+        console.log(chalk.green(`${title}`), chalk.green.inverse("ADDED!"));
+    } else {
+        console.log(chalk.yellow(`${title}`),chalk.yellow.inverse("ALREADY EXISTS!"));
+    }
 }
 
 
@@ -60,7 +62,7 @@ const loadNotes = () =>
         const dataJSON = dataBUFFER.toString();         //
         return JSON.parse(dataJSON);
 
-    } catch (err){                                      // if the file does not exists
+    } catch (err) {                                      // if the file does not exists
         return [];                                      // it returns an empty array
     }                                                   // that will hold the data
 }
@@ -70,17 +72,18 @@ const removeNote = (title) =>
 {
     const notes = loadNotes();
 
-    let flag = false;
-    for (let i = 0; i < notes.length && !flag; ++i)
-    {
-        if(notes[i].title.toLowerCase() === title.toLowerCase()) {
-            notes.splice(i,1);
-            saveNotes(notes);
-            flag = true;
-            console.log(`${title} has been removed!`);
-        }
+    // array of notes to keep
+    const notesToKeep = notes.filter((element)=>{
+        return element.title.toLowerCase() !== title.toLowerCase();
+    });
+
+    // check if the array of notes to keep has the same length as the original
+    if(notesToKeep.length !== notes.length) {
+        saveNotes(notesToKeep);
+        console.log(chalk.green(`${title}`),chalk.green.inverse("REMOVED!"));
+    } else {
+        console.log(chalk.yellow(`${title}`),chalk.yellow.inverse("NOT FOUND!"));
     }
-    if(!flag) console.log("No title found to be removed!");
     
 }
 
