@@ -1,6 +1,7 @@
 *.txt
 notes.json
 5-Get_Tasks
+.vscode
 
 # Logs
 logs
