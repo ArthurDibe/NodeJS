@@ -14,13 +14,13 @@ The application follows the format: *node app.js <command> <option>="information
 <br>
 List of commands and its options:<br>
   
-add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--title="write note's title"&nbsp;&nbsp;&nbsp;&nbsp;--body="write the note's description"  
-remove&nbsp;&nbsp;&nbsp;&nbsp;--title="title of the note"  
-list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nothing        
-read&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--title="title of the note"
+**add** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--title=**"write note's title"&nbsp;&nbsp;&nbsp;&nbsp;**--body=**"write the note's description"  
+**remove** &nbsp;&nbsp;&nbsp;&nbsp;**--title=**"title of the note"  
+**list** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *nothing*        
+**read** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--title=**"title of the note"
 
 
-**For Example:** node&nbsp;&nbsp;&nbsp;&nbsp;app.js&nbsp;&nbsp;&nbsp;&nbsp;add&nbsp;&nbsp;&nbsp;&nbsp;--title="Note 1"&nbsp;&nbsp;&nbsp;&nbsp;--body="Study node.js"
+***For Example:***&nbsp;&nbsp;node&nbsp;&nbsp;app.js&nbsp;&nbsp;&nbsp;add&nbsp;&nbsp;&nbsp;--title="Note 1"&nbsp;&nbsp;&nbsp;--body="Study node.js"
 
 
 
