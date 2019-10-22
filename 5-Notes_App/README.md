@@ -10,15 +10,16 @@ This application allows the user to add, remove, list and read notes that are in
 
 ## How to use the application
 
-The application follows the format: *node app.js <command> <option>="information ..."* <br>
+The application follows the format: **node app.js** *command* *option=*"information ..." <br>
 <br>
 List of commands and its options:<br>
-  
-**add** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--title=**"write note's title"&nbsp;&nbsp;&nbsp;&nbsp;**--body=**"write the note's description"  
-**remove** &nbsp;&nbsp;&nbsp;&nbsp;**--title=**"title of the note"  
-**list** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *nothing*        
-**read** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--title=**"title of the note"
 
+| **COMMAND** | **OPTION 1**           | **OPTION 2**         |
+| ----------- |:----------------------:|:--------------------:|
+| add         | --title="Note's Title" | --body="description" |
+| remove      | --title="Note's Title" | -                    |
+| list        | -                      | -                    |
+| read        | --title="Note's Title" | -                    |
 
 ***For Example:***&nbsp;&nbsp;node&nbsp;&nbsp;app.js&nbsp;&nbsp;&nbsp;add&nbsp;&nbsp;&nbsp;--title="Note 1"&nbsp;&nbsp;&nbsp;--body="Study node.js"
 
