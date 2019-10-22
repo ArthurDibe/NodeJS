@@ -16,7 +16,9 @@
 
 ## List of projects in this repository:
 
-1.  **`Hello_World:`** Simple starting project to just make the application become alive to display the message "Hello World" on the console.
-1.  **`Append_Data:`** This application will open a file, append data into it, then close the file once is finished.
-1.  **`Validate_Email_URL:`** This solution validates an email and an URL and tell the user if the email and URL are valid. The result comes from the console window. The result come in green for valid, and Red for non-valid.
-1.  **`Converstion_JSON:`** This application read a .json file, retrieves its information, changes it and overwrite the file with new information. 
+1.  **`Hello_World`**: Simple starting project to just make the application become alive to display the message "Hello World" on the console.
+1.  **`Append_Data`**: This application will open a file, append data into it, then close the file once is finished.
+1.  **`Validate_Email_URL`**: This solution validates an email and an URL and tell the user if the email and URL are valid. The result comes from the console window. The result come in green for valid, and Red for non-valid.
+1.  **`Conversion_JSON`**: This application read a .json file, retrieves its information, changes it and overwrite the file with new information. 
+1.  **`Notes_App`**: This application allows the user to add, remove, list and read notes that are in a file that follows ".json" format.
+1.  **`Temperature_Geocoding`**: This application demonstrates how to retrieve temperatures and geo-coordinates (longitude and latitude) from a specific address.
