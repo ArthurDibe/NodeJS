@@ -14,10 +14,10 @@ The application follows the format: *node app.js <command> <option>="information
 <br>
 List of commands and its options:<br>
   
-add       --title="write note's title" --body="write the note's description"  
-remove    --title="title of the note"  
-list	  nothing        
-read      --title="title of the note"
+add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--title="write note's title" --body="write the note's description"  
+remove&nbsp;&nbsp;&nbsp;&nbsp;--title="title of the note"  
+list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nothing        
+read&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--title="title of the note"
 
 
 **For Example:** node app.js add --title="Note 1" --body="Study node.js"
